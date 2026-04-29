@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Shop page</title>
+    <script src="/js/shop.js" async></script>
+</head>
+<body>
+    <h1>Shop page</h1>
+
+    <p th:text="|Selected section: ${section}!|" />
+
+    <!--todo make sections and navigate to selected section from model-->
+    <div id="shop" th:attr="data-section=${section}"></div>
+
+    <ul>
+        <li>Axe 1</li>
+        <li>Axe 2</li>
+        <li>Axe 3</li>
+    </ul>
+    
+</body>
+</html>
