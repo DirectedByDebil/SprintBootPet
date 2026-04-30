@@ -1,0 +1,33 @@
+.page-container {
+    padding: 3px;
+    display: grid;
+    gap: 3px;
+    font-size: calc(10px + 2vmin);
+    background-color: cadetblue;
+}
+
+.page-header, .page-footer {
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.page-header, .page-content, .page-footer {
+    padding: 8px;
+    margin: 4px;
+}
+
+.page-header {
+    position: sticky;
+    top: 0px;
+}
+
+.page-content {
+    background-color: cornsilk;
+    
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}

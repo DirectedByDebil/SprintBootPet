@@ -1,0 +1,8 @@
+.section-container {
+    background-color: bisque;
+}
+
+section > header {
+    background-color: chocolate;
+    text-align: center;
+}

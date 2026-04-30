@@ -1,0 +1,1 @@
+//todo place here all rest-api endpoints as constants
