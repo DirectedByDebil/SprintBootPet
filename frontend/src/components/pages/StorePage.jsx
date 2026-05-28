@@ -1,13 +1,6 @@
-
 function StorePage () {
   return (
     <div>
-      <header>
-        <span>
-          Store Page
-        </span>
-      </header>
-      
       <section>
         <header>Back to Home</header>
         <div>

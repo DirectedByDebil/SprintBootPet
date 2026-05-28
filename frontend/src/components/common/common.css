@@ -1,0 +1,25 @@
+:root {
+    --accent-color: #5f9ea0;
+    --anchor-hover-color: #ffa500;
+    --accent-text-color: #ffa500; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a img {
+    transition: scale 200ms ease-in-out;
+}
+
+a img:hover{
+    scale: 1.1;
+}
+
+a {
+    transition: color 200ms ease-in-out;
+}
+
+a:hover {
+    color: var(--anchor-hover-color);
+}

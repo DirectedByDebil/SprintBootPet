@@ -7,12 +7,6 @@ import SectionCatalogue from '../sections/SectionCatalogue';
 function HomePage () {
   return (
     <>
-      <header>
-        <span>
-          Home Page
-        </span>
-      </header>
-
       <main>
         <SectionAbout />
         <SectionCatalogue />

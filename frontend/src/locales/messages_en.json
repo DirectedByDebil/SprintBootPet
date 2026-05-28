@@ -1,0 +1,19 @@
+{
+
+    "ui.catalogue.titles.axes": "Axes",
+    "ui.catalogue.titles.talismans" : "Talismans",
+    "ui.catalogue.titles.dudki": "Dudki",
+    "ui.catalogue.titles.customs": "Customs",
+    
+    "ui.catalogue.subtitles.axes": "Axes Axes",
+    "ui.catalogue.subtitles.talismans" : "Talismans Talismans",
+    "ui.catalogue.subtitles.dudki": "Dudki Dudki",
+    "ui.catalogue.subtitles.customs": "Customs Customs",
+
+    "ui.catalogue.descriptions.axes": "Axes descriptions",
+    "ui.catalogue.descriptions.talismans": "Talismans descriptions",
+    "ui.catalogue.descriptions.dudki": "Dudki descriptions",
+    "ui.catalogue.descriptions.customs": "Customs descriptions",
+
+    "": ""
+}

@@ -3,9 +3,9 @@ import './section.css'
 function SectionReviews() {
   return (
     <>
-      <section>
+      <section id='reviews' className='section-container'>
         <header>Reviews</header>
-        <span>=== section content ===</span>
+        <span>=== todo: add carousel ===</span>
       </section>
     </>
   );

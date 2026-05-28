@@ -3,10 +3,10 @@ import './section.css';
 function SectionBlogs() {
   return (
     <>
-      <section>
+      <section id='blogs' className='section-container'>
         <header>Maker's Interviews/Blogs</header>
       </section>
-      <span>=== section content ===</span>
+      <span>=== todo: blocks of posts/gifs/videos ===</span>
     </>
   );
 }

@@ -1,8 +1,25 @@
 .section-container {
-    background-color: bisque;
+    padding: 8px;
 }
 
-section > header {
-    background-color: chocolate;
-    text-align: center;
+section > header {   
+    border-left: 2px solid #ffa500;
+
+    padding: 2px 6px;
+    text-align:left;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+.zooming-img {
+    transition: scale 200ms ease-in-out;
+}
+
+.zooming-img:hover {
+    scale: 1.1;
+}
+
+li:has(.zooming-img) {
+    overflow: hidden;
 }
