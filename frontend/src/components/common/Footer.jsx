@@ -1,9 +1,15 @@
 import './Layout.css';
 import './common.css';
+
+import { useTranslation } from 'react-i18next';
+
 import telegram from '../../images/telegram.png';
 import vk from '../../images/vk.png';
 
 function Footer () {
+
+  const { t } = useTranslation('common');
+
   return (
     <>
       <div className='page-footer'>
@@ -11,7 +17,7 @@ function Footer () {
 
           <section>
             <header>
-              Contact Information
+              {t('ui.headers.sections.contacts')}
             </header>
             <div className='col-started'>
               <div className='row-started'>
@@ -29,7 +35,7 @@ function Footer () {
 
           <section>
             <header>
-              Legal Information
+              {t('ui.headers.sections.legal_information')}
             </header>
             <div className='col-started'>
               <a href='/doc_1'>Doc ref 1</a>

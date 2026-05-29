@@ -1,0 +1,15 @@
+{
+    "ui.headers.pages.home_page": "Метаморфоза",
+    "ui.headers.pages.store": "Товары",
+    "ui.headers.pages.default": "",
+
+    "ui.headers.sections.about_us": "О нас",
+    "ui.headers.sections.catalogue": "Категории",
+    "ui.headers.sections.reviews": "Отзывы",
+    "ui.headers.sections.blogs": "Блоги",
+
+    "ui.headers.sections.contacts": "Контакты",
+    "ui.headers.sections.legal_information": "Документы",
+
+    "": ""
+}

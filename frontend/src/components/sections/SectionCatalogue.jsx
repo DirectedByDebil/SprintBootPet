@@ -1,5 +1,7 @@
 import './section.css';
 
+//#region import @mui/material components
+
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
@@ -11,45 +13,55 @@ import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 
+//#endregion
+
 import { useMediaQuery } from "@mui/material";
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import ModalCategoryInfo from '../popups/ModalCategoryInfo';
+
+//#region import images
 
 import Axes from '../../images/Axes.jpg';
 import Talisman from '../../images/Talisman.jpg';
 import Custom from '../../images/Custom.jpg';
 import Dudka from '../../images/Dudka.jpg';
 
+//#endregion
+
 function SectionCatalogue() {
+
+const { t } = useTranslation('sections');
+
 const itemData = [
   {
     id: 'axes',
     img: Axes,
-    title: 'ui.catalogue.titles.axes',
-    subtitle: 'ui.catalogue.subtitles.axes',
-    description: 'ui.catalogue.descriptions.axes'
+    title: t('ui.catalogue.titles.axes'),
+    subtitle: t('ui.catalogue.subtitles.axes'),
+    description: t('ui.catalogue.descriptions.axes')
   },
   {
     id: 'talismans',
     img: Talisman,
-    title: 'ui.catalogue.titles.talismans',
-    subtitle: 'ui.catalogue.subtitles.talismans',
-    description: 'ui.catalogue.descriptions.talismans'
+    title: t('ui.catalogue.titles.talismans'),
+    subtitle: t('ui.catalogue.subtitles.talismans'),
+    description: t('ui.catalogue.descriptions.talismans')
   },
   {
     id: 'dudki',
     img: Dudka,
-    title: 'ui.catalogue.titles.dudki',
-    subtitle: 'ui.catalogue.subtitles.dudki',
-    description: 'ui.catalogue.descriptions.dudki'
+    title: t('ui.catalogue.titles.dudki'),
+    subtitle: t('ui.catalogue.subtitles.dudki'),
+    description: t('ui.catalogue.descriptions.dudki')
   },
   {
     id: 'customs',
     img: Custom,
-    title: 'ui.catalogue.titles.customs',
-    subtitle: 'ui.catalogue.subtitles.customs',
-    description: 'ui.catalogue.descriptions.customs'
+    title: t('ui.catalogue.titles.customs'),
+    subtitle: t('ui.catalogue.subtitles.customs'),
+    description: t('ui.catalogue.descriptions.customs')
   },
 ];
 
@@ -77,7 +89,7 @@ const onCategoryInfoClick = (item) => {
   return (
     <>
       <section id='catalogue' className='section-container'>
-        <header>Catalogue Categories Grid</header>
+        <header>{t('ui.catalogue.header')}</header>
         
         <ModalCategoryInfo 
           isOpened={categoryInfoOpened} 
@@ -86,7 +98,7 @@ const onCategoryInfoClick = (item) => {
           ariaDescribedBy={"modal-category-description"}
         >
           <Typography id="modal-category-info" variant="h6" component="h2">
-            Test: {categoryInfo.title}
+            {categoryInfo.title}
           </Typography>
           <Divider />
           <Typography id="modal-category-description">
@@ -125,7 +137,7 @@ const onCategoryInfoClick = (item) => {
           ))}
         </ImageList>
                 
-        <Button variant="contained" href='/store'>To Store</Button>
+        <Button variant="contained" href='/store'>{t('ui.catalogue.buttons.to_store')}</Button>
       </section>
     </>
   );

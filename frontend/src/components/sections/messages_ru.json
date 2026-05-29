@@ -1,0 +1,41 @@
+{
+
+    "ui.about_us.header": "О нас",
+    "ui.about_us.description": "Творческое пространство Мастерская ручной работы, кастома и декупажа",
+
+    "ui.about_us.what_we_do.header": "Что делаем?",
+    "ui.about_us.what_we_do.description": "Любое изделие или план кастомизации можно заказать или приобрести в личной переписке Событие, будь то день рождения друга, родного человека или хорошего знакомого",
+
+    "ui.about_us.style.header": "Никакого аниме!!!",
+    "ui.about_us.style.description": "Декорация // реквизит к мероприятию, фотосессии или косплей сьют (все естественно в стилистике канала - аниме изделия не изготавливаю!!!)",
+
+    "ui.about_us.details.header": "Условия",
+    "ui.about_us.details.description": "Детали обговариваются, всё уточняется, сроки озвучиваются. Деньги беру только по изготовлению заказа и передачи❗️Предоплата возможна, при условии работы с дорогим/редким материалом",
+
+
+    "ui.catalogue.header": "Категории товаров",
+
+    "ui.catalogue.titles.axes": "Топоры",
+    "ui.catalogue.titles.talismans" : "Талисманы",
+    "ui.catalogue.titles.dudki": "Дудки",
+    "ui.catalogue.titles.customs": "Сувениры",
+    
+    "ui.catalogue.subtitles.axes": "Разные виды топоров",
+    "ui.catalogue.subtitles.talismans" : "Скандинавские и славянские талисманы",
+    "ui.catalogue.subtitles.dudki": "Раскраска Вашей Дудочки",
+    "ui.catalogue.subtitles.customs": "Сувениры ручной работы",
+
+    "ui.catalogue.descriptions.axes": "Ваша башка топора (любое состояние, в рамках адекватности, естественно) мои – топорище, работа (зачистка, полировка, расклин, дизайн и т.д.), заточка, покрытие составом Обойдется в 2000р (маленький/средний) ~ 3000р (большой) Если башка моя, о бюджете на сам металл договоримся +предыдущий пункт – работа Естественно, в продаже всегда практически есть топоры уже готовые Они как правило дешевле, но и дизайн вы не выбираете (Тем не менее уверяю вас, в качестве вы не потеряете ничуть👍)",
+    "ui.catalogue.descriptions.talismans": "Talismans descriptions",
+    "ui.catalogue.descriptions.dudki": "Dudki descriptions",
+    "ui.catalogue.descriptions.customs": "Customs descriptions",
+
+    "ui.catalogue.buttons.to_store": "Перейти к товарам",
+
+
+    "ui.blogs.header": "Блоги мастера",
+    
+    "ui.reviews.header": "Отзывы покупателей",
+
+    "": ""
+}

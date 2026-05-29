@@ -1,0 +1,38 @@
+{
+    "ui.about_us.header": "About Us",
+    "ui.about_us.description": "Creative space Handmade workshop, custom and decoupage",
+
+    "ui.about_us.what_we_do.header": "What do we do?",
+    "ui.about_us.what_we_do.description": "Any product or customization plan can be ordered or purchased in personal correspondence. An event, be it a friend's birthday, a loved one's, or a good acquaintance's",
+
+    "ui.about_us.style.header": "No anime!!!",
+    "ui.about_us.style.description": "Decoration // props for events, photo shoots, or cosplay suits (all naturally in the channel's style - I do not make anime products!!!)",
+
+    "ui.about_us.details.header": "Terms & Conditions",
+    "ui.about_us.details.description": "Details are discussed, everything is clarified, deadlines are announced. I only take money after the order is made and delivered❗️Prepayment is possible when working with expensive/rare materials",
+
+    "ui.catalogue.header": "Product Categories",
+
+    "ui.catalogue.titles.axes": "Axes",
+    "ui.catalogue.titles.talismans": "Talismans",
+    "ui.catalogue.titles.dudki": "Dudki (Pipes)",
+    "ui.catalogue.titles.customs": "Souvenirs",
+    
+    "ui.catalogue.subtitles.axes": "Different types of axes",
+    "ui.catalogue.subtitles.talismans": "Scandinavian and Slavic talismans",
+    "ui.catalogue.subtitles.dudki": "Custom painting of your Dudka",
+    "ui.catalogue.subtitles.customs": "Handmade souvenirs",
+
+    "ui.catalogue.descriptions.axes": "Your axe head (any condition, within reason, of course) + my handle, work (cleaning, polishing, wedging, design, etc.), sharpening, coating application. Cost: 2000 rubles (small/medium) ~ 3000 rubles (large). If the head is mine, we'll agree on the budget for the metal + the previous point – work. Of course, there are always ready-made axes for sale. They are usually cheaper, but you don't get to choose the design (Nevertheless, I assure you, you won't lose anything in quality👍)",
+    "ui.catalogue.descriptions.talismans": "Talismans descriptions",
+    "ui.catalogue.descriptions.dudki": "Dudki descriptions",
+    "ui.catalogue.descriptions.customs": "Customs descriptions",
+
+    "ui.catalogue.buttons.to_store": "Go to products",
+
+    "ui.blogs.header": "Master's Blog",
+
+    "ui.reviews.header": "Customer Reviews",
+
+    "": ""
+}

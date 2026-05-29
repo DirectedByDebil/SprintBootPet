@@ -3,16 +3,23 @@ import '../common/Layout.css';
 import '../common/common.css';
 import vk from '../../images/vk.png';
 
+//#region import @mui/material components
+
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
+//#endregion
+
 import Typography from '@mui/material/Typography';
 
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function SectionAbout () {
+
+  const { t } = useTranslation('sections');
 
   const [expanded, setExpanded] = useState('panel1');
 
@@ -23,11 +30,10 @@ function SectionAbout () {
   return (
     <>
       <section id='about' className='section-container'>
-        <header>About us</header>
+        <header>{t('ui.about_us.header')}</header>
 
         <p>
-          Творческое пространство 
-          Мастерская ручной работы, кастома и декупажа
+          {t('ui.about_us.description')}
         </p>
   
 
@@ -43,12 +49,13 @@ function SectionAbout () {
               aria-controls={`-panel1-content`}
               id={`panel1-header`}
             >
-              <Typography component="span">Что делаем?</Typography>
+              <Typography component="span">
+                {t('ui.about_us.what_we_do.header')}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <p>
-                Любое изделие или план кастомизации можно заказать или приобрести в личной переписке
-                Событие, будь то день рождения друга, родного человека или хорошего знакомого;
+                {t('ui.about_us.what_we_do.description')}
               </p>
 
             </AccordionDetails>
@@ -60,14 +67,13 @@ function SectionAbout () {
               aria-controls={`-panel2-content`}
               id={`panel2-header`}
             >
-              <Typography component="span">Никакого аниме!!!</Typography>
+              <Typography component="span">
+                {t('ui.about_us.style.header')}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <p>
-                Декорация // реквизит к мероприятию, фотосессии или косплей сьют
-                <strong>
-                (все естественно в стилистике канала - аниме изделия не изготавливаю!!!)
-                </strong>
+                {t('ui.about_us.style.description')}
               </p>
             </AccordionDetails>
           </Accordion>
@@ -78,16 +84,13 @@ function SectionAbout () {
               aria-controls={`-panel3-content`}
               id={`panel3-header`}
             >
-              <Typography component="span">Условия</Typography>
+              <Typography component="span">
+                {t('ui.about_us.details.header')}
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <p>
-                Детали обговариваются, всё уточняется, сроки озвучиваются.
-                Деньги беру только по изготовлению заказа и передачи
-                <strong>
-                  ❗️Предоплата возможна
-                </strong>,
-                при условии работы с дорогим/редким материалом
+                {t('ui.about_us.details.description')}
               </p>
 
             </AccordionDetails>

@@ -1,0 +1,15 @@
+{
+    "ui.headers.pages.home_page": "Metamorphosis",
+    "ui.headers.pages.store": "Products",
+    "ui.headers.pages.default": "",
+
+    "ui.headers.sections.about_us": "About Us",
+    "ui.headers.sections.catalogue": "Categories",
+    "ui.headers.sections.reviews": "Reviews",
+    "ui.headers.sections.blogs": "Blogs",
+
+    "ui.headers.sections.contacts": "Contact Information",
+    "ui.headers.sections.legal_information": "Legal Information",
+
+    "": ""
+}

@@ -1,30 +1,34 @@
 import './Layout.css';
 import './common.css';
+
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 import logo from '../../images/logo.svg'
 
+//todo use header-menu component
 
-function getHeaderInfo(location) {
+function getHeaderInfo(location, t) {
   if (!location) {
     console.error("location is null!")
-    return {title: 'test'};   
+    return {title: ''};   
   }
 
   var title;
   const navs = [];
   switch (location.pathname) {
     case '/':
-      title = 'HomePage'
-      navs.push({id:'#about', label:'about'});
-      navs.push({id:'#catalogue', label:'catalogue'});
-      navs.push({id:'#reviews', label:'reviews'});
-      navs.push({id:'#blogs', label:'blogs'});
+      title = t('ui.headers.pages.home_page')
+      navs.push({id:'#about', label:t('ui.headers.sections.about_us')});
+      navs.push({id:'#catalogue', label:t('ui.headers.sections.catalogue')});
+      navs.push({id:'#reviews', label:t('ui.headers.sections.reviews')});
+      navs.push({id:'#blogs', label:t('ui.headers.sections.blogs')});
       break;
     case '/store':
-      title = 'StorePage';
+      title = t('ui.headers.pages.store');
       break;
     default:
-      title = 'default';
+      title = t('ui.headers.pages.default');
       break;
   }
 
@@ -33,9 +37,11 @@ function getHeaderInfo(location) {
 
 
 function Header () {
+
+  const { t } = useTranslation('common');
   
   const location = useLocation();
-  const {title,navs} = getHeaderInfo(location);
+  const {title,navs} = getHeaderInfo(location, t);
 
   return (
     <>
