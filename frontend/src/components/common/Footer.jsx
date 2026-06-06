@@ -12,7 +12,7 @@ function Footer () {
 
   return (
     <>
-      <div className='page-footer'>
+      <div className='page-footer section-container' reversed >
         <footer className='grid'>
 
           <section>

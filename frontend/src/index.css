@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  --accent-light: #65b088;    
+  --effect-light: #ddfbf4;
+  
+  --bg-primary: white;
+  --bg-primary-reversed: #63a1de;
+  --bg-header: white;
+  --bg-accordion: #63a1de;
+  --bg-modal: white;
+
+  --shadow-primary: rgba(0,0,0,0.6);
+
+  --text-primary: #63a1de;
+  --text-primary-reversed: white;
+
+  --text-accent: #2c3e9e;
+  --text-accent-reversed: white;
+
+  --text-hover: #63a1de;
+  --text-hover-reversed: #ddfbf4;
+
+  --text-accordion: white;
+  --text-modal: black;
+
+  --a-color: #07eaa2;
+
+  transition: 
+  background-color 200ms ease-in-out,
+  color 200ms ease-in-out;
+}
+
+body.dark {
+  --accent-light: #65b088;    
+  --effect-light: #ddfbf4;
+  
+  --bg-primary: gray;
+  --bg-primary-reversed: rgb(60, 60, 60);
+  --bg-header: rgb(60,60,60);
+  --bg-accordion: rgb(60,60,60);
+  --bg-modal: rgb(60,60,60);
+
+  --shadow-primary: rgba(0,0,0,0.6);
+
+  --text-primary: white;
+  --text-primary-reversed: white;
+
+  --text-accent: white;
+  --text-accent-reversed: white;
+
+  --text-hover: #2c3e9e;
+  --text-hover-reversed: #ddfbf4;
+
+  --text-accordion: white;
+  --text-modal: white;
+
+  --a-color: #07eaa2;
+}

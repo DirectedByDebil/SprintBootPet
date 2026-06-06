@@ -43,56 +43,58 @@ function SectionAbout () {
 
           <div className='col-started'>
 
-          <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} >
+          <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} className='accordion' disableGutters>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls={`-panel1-content`}
-              id={`panel1-header`}
-            >
-              <Typography component="span">
+              id={`panel1-header`}>
+
+              <Typography variant='h6'>
                 {t('ui.about_us.what_we_do.header')}
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <p>
+
+              <Typography variant='subtitle1'>
                 {t('ui.about_us.what_we_do.description')}
-              </p>
+              </Typography>
 
             </AccordionDetails>
           </Accordion>
 
-          <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+          <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')} className='accordion' disableGutters>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls={`-panel2-content`}
-              id={`panel2-header`}
-            >
-              <Typography component="span">
+              id={`panel2-header`}>
+
+              <Typography variant='h6'>
                 {t('ui.about_us.style.header')}
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <p>
+
+              <Typography variant='subtitle1'>
                 {t('ui.about_us.style.description')}
-              </p>
+              </Typography>
             </AccordionDetails>
           </Accordion>
 
-          <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')} >
+          <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')} className='accordion' disableGutters>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls={`-panel3-content`}
-              id={`panel3-header`}
-            >
-              <Typography component="span">
+              id={`panel3-header`}>
+
+              <Typography variant='h6'>
                 {t('ui.about_us.details.header')}
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <p>
-                {t('ui.about_us.details.description')}
-              </p>
 
+              <Typography variant='subtitle1'>
+                {t('ui.about_us.details.description')}
+              </Typography>
             </AccordionDetails>
           </Accordion>
 

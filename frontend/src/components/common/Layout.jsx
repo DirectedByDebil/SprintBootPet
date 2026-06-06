@@ -8,9 +8,9 @@ function Layout () {
     <>
       <div className='page-container'>
         <Header />
-        <main className='page-content'>
+        <div className='page-content'>
           <Outlet />
-        </main>
+        </div>
         <Footer />
       </div>
     </>

@@ -3,7 +3,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: var(--bg-modal);
+    color: var(--text-modal);
     
     border-radius: 4px;
     padding: 4px;

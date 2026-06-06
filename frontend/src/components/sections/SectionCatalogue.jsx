@@ -88,7 +88,7 @@ const onCategoryInfoClick = (item) => {
 
   return (
     <>
-      <section id='catalogue' className='section-container'>
+      <section id='catalogue' className='section-container' reversed>
         <header>{t('ui.catalogue.header')}</header>
         
         <ModalCategoryInfo 

@@ -1,9 +1,22 @@
 .section-container {
     padding: 8px;
+    margin: 8px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--shadow-primary, black);
+}
+
+.section-container[reversed] {
+    --text-hover: var(--text-hover-reversed);
+    color: var(--text-primary-reversed);
+    background-color: var(--bg-primary-reversed);
+}
+
+.section-container[reversed] header {
+    color: var(--text-accent-reversed);
 }
 
 section > header {   
-    border-left: 2px solid #ffa500;
+    color: var(--text-accent);
 
     padding: 2px 6px;
     text-align:left;

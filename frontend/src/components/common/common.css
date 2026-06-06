@@ -1,9 +1,3 @@
-:root {
-    --accent-color: #5f9ea0;
-    --anchor-hover-color: #ffa500;
-    --accent-text-color: #ffa500; 
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -21,5 +15,18 @@ a {
 }
 
 a:hover {
-    color: var(--anchor-hover-color);
+    color: var(--text-hover);
+}
+
+
+.accordion {
+    background-color: var(--bg-accordion) !important;
+    color: var(--text-accordion) !important;
+
+    border-radius: 8px !important;
+    border-style: none !important;
+}
+
+.accordion::before {
+    display: none !important;
 }

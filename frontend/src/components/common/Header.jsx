@@ -1,12 +1,25 @@
 import './Layout.css';
 import './common.css';
 
+import AppBar from '@mui/material/AppBar';
+import Container from '@mui/material/Container';
+import Toolbar from '@mui/material/Toolbar';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+
+import Box from '@mui/material/Box';
+
+import MenuIcon from '@mui/icons-material/Menu';
+
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import ButtonChangeTheme from '../buttons/ButtonChangeTheme';
+
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
-import logo from '../../images/logo.svg'
-
-//todo use header-menu component
+import Logo from './Logo';
 
 function getHeaderInfo(location, t) {
   if (!location) {
@@ -38,32 +51,100 @@ function getHeaderInfo(location, t) {
 
 function Header () {
 
-  const { t } = useTranslation('common');
+  const [anchorElNav, setAnchorElNav] = useState(null);
   
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+  
+  const { t } = useTranslation('common');
   const location = useLocation();
-  const {title,navs} = getHeaderInfo(location, t);
+  const {navs} = getHeaderInfo(location, t);
 
   return (
     <>
-      <div className='page-header'>
-        <a href='/' className='row-centered'>
-          <img src={logo} alt='logo' height={24}></img>
-        </a>
-        <header>
-          {title}
+      <AppBar position='sticky'
+        className='page-header'
+        sx={{
+          backgroundColor: 'var(--bg-header)'
+        }}>
+        <Container maxWidth='xl'>
+          <Toolbar disableGutters sx={{ width: '100%'}}>
 
-          <nav className='page-navbar'>
-            {
-              navs.map((item) => (
-                <span key={item.id}>
-                  <a href={item.id}>{item.label}</a>
-                </span>
-              ))
-            }
-  
-          </nav>
-        </header>
-      </div>
+            {/* app bar xs */}
+            <Box sx={{
+              flexGrow: 1,
+              display: { xs: 'flex', md: 'none' },
+              justifyContent: 'space-between',
+              alignItems: 'center'
+            }}>
+              
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="black"
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'left',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{ display: { xs: 'block', md: 'none' } }}
+              >
+                {
+                  navs.map((item) => (
+                    <MenuItem key={item.id}>
+                      <a href={item.id}>{item.label}</a>
+                    </MenuItem>
+                  ))
+                }
+
+              </Menu>
+
+              <Logo />
+              <ButtonChangeTheme />
+            </Box>
+
+            {/* app bar md */}
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+
+              <Logo />
+
+              <nav className='page-navbar'>
+                {
+                  navs.map((item) => (
+                    <Button key={item.id}>
+                        <a href={item.id}>{item.label}</a>
+                    </Button>
+                  ))
+                }
+              </nav>
+
+              <ButtonChangeTheme sx={{ml: 'auto'}} />
+
+            </Box>
+            
+          </Toolbar>
+        </Container>
+      </AppBar>
     </>
   );
 }
