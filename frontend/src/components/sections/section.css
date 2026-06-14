@@ -1,5 +1,6 @@
 .section-container {
     padding: 8px;
+    padding-bottom: 18px;
     margin: 8px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px var(--shadow-primary, black);

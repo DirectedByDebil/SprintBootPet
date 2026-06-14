@@ -1,0 +1,14 @@
+{
+    "ui.pages.store.columns.image":"Image",
+    "ui.pages.store.columns.item":"Item",
+    "ui.pages.store.columns.categories":"Categories",
+    "ui.pages.store.columns.materials":"Materials",
+    "ui.pages.store.columns.price":"Price",
+
+    "ui.pages.store.materials.wool":"Wool",
+    "ui.pages.store.materials.wood":"Wood",
+    "ui.pages.store.materials.cotton":"Cotton",
+
+    "ui.pages.store.services.fix":"Fix Item",
+    "ui.pages.store.services.customization":"Customize item"
+}

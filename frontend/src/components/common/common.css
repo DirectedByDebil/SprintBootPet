@@ -23,10 +23,57 @@ a:hover {
     background-color: var(--bg-accordion) !important;
     color: var(--text-accordion) !important;
 
-    border-radius: 8px !important;
+    border-radius: 16px !important;
     border-style: none !important;
 }
 
 .accordion::before {
     display: none !important;
+}
+
+.button {
+    color: var(--text-button) !important;
+    background-color: var(--bg-button) !important;
+}
+
+.tag {
+    display: inline-flex;
+    padding: 4px 12px;
+    margin: 4px;
+
+    background-color:var(--tag-bg-default);
+    color: var(--tag-text-default);
+    border-radius: 18px;
+
+    text-align: center;
+}
+
+.tag[data-category-axes] {
+    background-color: var(--tag-category-axes);
+    color: var(--tag-category-axes-text);
+}
+
+.tag[data-service-fix] {
+    background-color: var(--tag-service-fix);
+    color: var(--tag-service-fix-text);
+}
+
+.tag[data-service-customization] {
+    background-color: var(--tag-service-customization);
+    color: var(--tag-service-customization-text);
+}
+
+.tag[data-materials-wood] {
+    background-color: var(--tag-materials-wood);
+    color: var(--tag-materials-wood-text);
+}
+
+.tag[data-materials-wool] {
+    background-color: var(--tag-materials-wool);
+    color: var(--tag-materials-wool-text);
+}
+
+.tag[data-materials-cotton] {
+    background-color: var(--tag-materials-cotton);
+    color: var(--tag-materials-cotton-text);
 }

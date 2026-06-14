@@ -3,6 +3,8 @@ import './common.css';
 
 import { useTranslation } from 'react-i18next';
 
+import TelegramIcon from '@mui/icons-material/Telegram';
+
 import telegram from '../../images/telegram.png';
 import vk from '../../images/vk.png';
 
@@ -26,6 +28,7 @@ function Footer () {
                 </a>
                 <a href='/todo_tg'>
                   <img src={telegram} alt='telegram' height={32} />
+                  <TelegramIcon />
                 </a>
               </div>
               <span>org@mail.ru</span>

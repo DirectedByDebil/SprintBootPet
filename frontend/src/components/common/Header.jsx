@@ -72,7 +72,7 @@ function Header () {
         sx={{
           backgroundColor: 'var(--bg-header)'
         }}>
-        <Container maxWidth='xl'>
+        <Container maxWidth={false}>
           <Toolbar disableGutters sx={{ width: '100%'}}>
 
             {/* app bar xs */}
@@ -124,7 +124,10 @@ function Header () {
             </Box>
 
             {/* app bar md */}
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            <Box sx={{ flexGrow: 1,
+                display: { xs:'none', md:'flex'},
+                alignItems:'center',
+                gap: 3 }}>
 
               <Logo />
 

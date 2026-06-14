@@ -1,7 +1,8 @@
 {
 
     "ui.about_us.header": "О нас",
-    "ui.about_us.description": "Творческое пространство Мастерская ручной работы, кастома и декупажа",
+    "ui.about_us.metamorphosis": "Творческое пространство Метаморфоза",
+    "ui.about_us.description": "Мастерская ручной работы, кастома и декупажа",
 
     "ui.about_us.what_we_do.header": "Что делаем?",
     "ui.about_us.what_we_do.description": "Любое изделие или план кастомизации можно заказать или приобрести в личной переписке Событие, будь то день рождения друга, родного человека или хорошего знакомого",
@@ -17,7 +18,7 @@
 
     "ui.catalogue.titles.axes": "Топоры",
     "ui.catalogue.titles.talismans" : "Талисманы",
-    "ui.catalogue.titles.dudki": "Дудки",
+    "ui.catalogue.titles.dudki": "Электронные курилки",
     "ui.catalogue.titles.customs": "Сувениры",
     
     "ui.catalogue.subtitles.axes": "Разные виды топоров",
@@ -30,12 +31,15 @@
     "ui.catalogue.descriptions.dudki": "Dudki descriptions",
     "ui.catalogue.descriptions.customs": "Customs descriptions",
 
-    "ui.catalogue.buttons.to_store": "Перейти к товарам",
+    "ui.catalogue.buttons.to_store": "Перейти к изделиям",
 
 
     "ui.blogs.header": "Блоги мастера",
     
     "ui.reviews.header": "Отзывы покупателей",
+
+    "ui.store.header": "Изделия",
+    "ui.store.filters": "Фильтры изделий",
 
     "": ""
 }

@@ -1,18 +1,12 @@
 import './section.css';
 import '../common/Layout.css';
 import '../common/common.css';
-import vk from '../../images/vk.png';
+import About from '../../images/About.jpg';
 
-//#region import @mui/material components
-
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
+import {Accordion, AccordionSummary, AccordionDetails,
+          Box, Typography,
+          Card, CardMedia,} from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
-//#endregion
-
-import Typography from '@mui/material/Typography';
 
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -32,71 +26,103 @@ function SectionAbout () {
       <section id='about' className='section-container'>
         <header>{t('ui.about_us.header')}</header>
 
-        <p>
-          {t('ui.about_us.description')}
-        </p>
+        <div className='grid p-top'>
+
+          <Card sx={{ position: 'relative', maxWidth: '100%', borderRadius: '16px' }}>
+        
+            <CardMedia
+              component="img"
+              image={About}
+              alt="maker"
+              className='zooming-img'
+              sx={{
+                width: '100%',
+                maxHeight: '512px',
+                height: 'auto',
+                objectFit: 'cover',
+                objectPosition: 'center',
+                display: 'block',
+              }}
+            />
+            
+            <Box
+              sx={{
+                position: 'absolute',
+                bottom: 0,
+                left: 0,
+                right: 0,
+                p: { xs: 2, sm: 3, md: 4 },
+                background: 'linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0))',
+                color: 'white',
+                textAlign: 'center',
+              }}
+            >
+              <Typography variant="h5" gutterBottom>
+                {t('ui.about_us.metamorphosis')}
+              </Typography>
+              <Typography variant="body2">
+                {t('ui.about_us.description')}
+              </Typography>
+            </Box>
+            
+          </Card>
   
-
-        <div className='grid'>
-          {/* todo maybe make carousel */}
-          <img src={vk} alt='maker'/>
-
           <div className='col-started'>
 
-          <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} className='accordion' disableGutters>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls={`-panel1-content`}
-              id={`panel1-header`}>
+            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} className='accordion' disableGutters>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls={`-panel1-content`}
+                id={`panel1-header`}>
 
-              <Typography variant='h6'>
-                {t('ui.about_us.what_we_do.header')}
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
+                <Typography variant='h6'>
+                  {t('ui.about_us.what_we_do.header')}
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
 
-              <Typography variant='subtitle1'>
-                {t('ui.about_us.what_we_do.description')}
-              </Typography>
+                <Typography variant='subtitle1'>
+                  {t('ui.about_us.what_we_do.description')}
+                </Typography>
 
-            </AccordionDetails>
-          </Accordion>
+              </AccordionDetails>
+            </Accordion>
 
-          <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')} className='accordion' disableGutters>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls={`-panel2-content`}
-              id={`panel2-header`}>
+            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')} className='accordion' disableGutters>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls={`-panel2-content`}
+                id={`panel2-header`}>
 
-              <Typography variant='h6'>
-                {t('ui.about_us.style.header')}
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
+                <Typography variant='h6'>
+                  {t('ui.about_us.style.header')}
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
 
-              <Typography variant='subtitle1'>
-                {t('ui.about_us.style.description')}
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
+                <Typography variant='subtitle1'>
+                  {t('ui.about_us.style.description')}
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
 
-          <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')} className='accordion' disableGutters>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls={`-panel3-content`}
-              id={`panel3-header`}>
+            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')} className='accordion' disableGutters>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls={`-panel3-content`}
+                id={`panel3-header`}>
 
-              <Typography variant='h6'>
-                {t('ui.about_us.details.header')}
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
+                <Typography variant='h6'>
+                  {t('ui.about_us.details.header')}
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
 
-              <Typography variant='subtitle1'>
-                {t('ui.about_us.details.description')}
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
+                <Typography variant='subtitle1'>
+                  {t('ui.about_us.details.description')}
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
 
           </div>
 

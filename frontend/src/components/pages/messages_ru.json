@@ -1,0 +1,14 @@
+{
+    "ui.pages.store.columns.image":"Картинка",
+    "ui.pages.store.columns.item":"Название",
+    "ui.pages.store.columns.categories":"Категории",
+    "ui.pages.store.columns.materials":"Материалы",
+    "ui.pages.store.columns.price":"Стоимость",
+
+    "ui.pages.store.materials.wool":"Шёлк",
+    "ui.pages.store.materials.wood":"Дерево",
+    "ui.pages.store.materials.cotton":"Хлопок",
+
+    "ui.pages.store.services.fix":"Ремонт изделия",
+    "ui.pages.store.services.customization":"Кастомизация изделия"
+}

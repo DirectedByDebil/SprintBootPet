@@ -10,6 +10,7 @@
 ## Store Page
 ### Expanded Items Grid
 ### Order Form
+### Chooose service for every category (order, buy ready, customization, fix)
 
 ## Admin Control Panel
 

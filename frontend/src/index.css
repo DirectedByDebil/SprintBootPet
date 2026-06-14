@@ -18,9 +18,13 @@ body {
   
   --bg-primary: white;
   --bg-primary-reversed: #63a1de;
-  --bg-header: white;
+  --bg-header: rgba(255,255,255,0.7);
   --bg-accordion: #63a1de;
   --bg-modal: white;
+  --bg-button: white;
+  --bg-table: rgb(240,240,240);
+  --bg-table-header: rgb(230,230,230);
+  --bg-table-pagination: rgb(230,230,230);
 
   --shadow-primary: rgba(0,0,0,0.6);
 
@@ -35,6 +39,25 @@ body {
 
   --text-accordion: white;
   --text-modal: black;
+  --text-button: #2c3e9e;
+  --text-table: black;
+
+  --tag-bg-default: gray;
+  --tag-category-axes: brown;
+  --tag-service-fix: cornflowerblue;
+  --tag-service-customization: deepskyblue;
+    
+  --tag-materials-wood: green;
+  --tag-materials-wool: wheat;
+  --tag-materials-cotton: cadetblue;
+
+  --tag-text-default: white;
+  --tag-category-axes-text: white;
+  --tag-service-fix-text: rgb(240,240,240);
+  --tag-service-customization-text: rgb(40,40,40);
+  --tag-materials-wood-text: rgb(240,240,240);
+  --tag-materials-wool-text: rgb(40,40,40);
+  --tag-materials-cotton-text: white;
 
   --a-color: #07eaa2;
 
@@ -49,9 +72,13 @@ body.dark {
   
   --bg-primary: gray;
   --bg-primary-reversed: rgb(60, 60, 60);
-  --bg-header: rgb(60,60,60);
+  --bg-header: rgba(60,60,60,0.7);
   --bg-accordion: rgb(60,60,60);
   --bg-modal: rgb(60,60,60);
+  --bg-button: rgb(90,90,90);
+  --bg-table: rgb(100,100,100);
+  --bg-table-header: rgb(80,80,80);
+  --bg-table-pagination: rgb(80,80,80);
 
   --shadow-primary: rgba(0,0,0,0.6);
 
@@ -66,6 +93,25 @@ body.dark {
 
   --text-accordion: white;
   --text-modal: white;
+  --text-button: white;
+  --text-table: white;
+
+  --tag-bg-default: gray;
+  --tag-category-axes: rgb(60,60,60);
+  --tag-service-fix: rgb(60,60,60);
+  --tag-service-customization: rgb(60,60,60);
+    
+  --tag-materials-wood: rgb(60,60,60);
+  --tag-materials-wool: rgb(60,60,60);
+  --tag-materials-cotton: rgb(60,60,60);
+
+  --tag-text-default: white;
+  --tag-category-axes-text: white;
+  --tag-service-fix-text: white;
+  --tag-service-customization-text: white;
+  --tag-materials-wood-text: white;
+  --tag-materials-wool-text: white;
+  --tag-materials-cotton-text: white;
 
   --a-color: #07eaa2;
 }

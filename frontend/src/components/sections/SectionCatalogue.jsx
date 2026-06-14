@@ -1,19 +1,12 @@
 import './section.css';
+import '../common/common.css'
 
-//#region import @mui/material components
+import {ImageList, ImageListItem, ImageListItemBar,
+        Button, IconButton,
+        Typography, Divider
+} from '@mui/material';
 
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import InfoIcon from '@mui/icons-material/Info';
-
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton'
-
-import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
-
-//#endregion
+import { Info, ShoppingCartCheckout } from '@mui/icons-material';
 
 import { useMediaQuery } from "@mui/material";
 import { useState } from 'react';
@@ -34,6 +27,7 @@ function SectionCatalogue() {
 
 const { t } = useTranslation('sections');
 
+//todo add dices
 const itemData = [
   {
     id: 'axes',
@@ -126,10 +120,10 @@ const onCategoryInfoClick = (item) => {
                 title={item.title}
                 subtitle={item.subtitle}
                 actionIcon={
-                  <IconButton
+                  <IconButton sx={{color:'white'}}
                     onClick={() => onCategoryInfoClick(item)}
                   >
-                    <InfoIcon />
+                    <Info />
                   </IconButton>
                 }
               />
@@ -137,7 +131,14 @@ const onCategoryInfoClick = (item) => {
           ))}
         </ImageList>
                 
-        <Button variant="contained" href='/store'>{t('ui.catalogue.buttons.to_store')}</Button>
+        <Button variant="contained" className='button'
+          href='/store'
+          startIcon={<ShoppingCartCheckout/>}>
+            
+          <Typography variant='caption' size='small'>
+            {t('ui.catalogue.buttons.to_store')}
+          </Typography>
+        </Button>
       </section>
     </>
   );

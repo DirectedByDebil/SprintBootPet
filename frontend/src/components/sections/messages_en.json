@@ -1,6 +1,7 @@
 {
     "ui.about_us.header": "About Us",
-    "ui.about_us.description": "Creative space Handmade workshop, custom and decoupage",
+    "ui.about_us.metamorphosis": "Creative space Metamorphosis",
+    "ui.about_us.description": "Handmade workshop, custom and decoupage",
 
     "ui.about_us.what_we_do.header": "What do we do?",
     "ui.about_us.what_we_do.description": "Any product or customization plan can be ordered or purchased in personal correspondence. An event, be it a friend's birthday, a loved one's, or a good acquaintance's",
@@ -15,7 +16,7 @@
 
     "ui.catalogue.titles.axes": "Axes",
     "ui.catalogue.titles.talismans": "Talismans",
-    "ui.catalogue.titles.dudki": "Dudki (Pipes)",
+    "ui.catalogue.titles.dudki": "Dudki",
     "ui.catalogue.titles.customs": "Souvenirs",
     
     "ui.catalogue.subtitles.axes": "Different types of axes",
@@ -33,6 +34,9 @@
     "ui.blogs.header": "Master's Blog",
 
     "ui.reviews.header": "Customer Reviews",
+
+    "ui.store.header": "Items",
+    "ui.store.filters": "Items Filters",
 
     "": ""
 }
