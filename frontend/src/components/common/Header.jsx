@@ -1,19 +1,15 @@
 import './Layout.css';
 import './common.css';
 
-import AppBar from '@mui/material/AppBar';
-import Container from '@mui/material/Container';
-import Toolbar from '@mui/material/Toolbar';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
+import ButtonChangeTheme from '../inputs/ButtonChangeTheme';
 
-import Box from '@mui/material/Box';
+import { AppBar, Container, Toolbar,
+        Menu, MenuItem, Box,
+        Button, IconButton
+      } from '@mui/material';
+
 
 import MenuIcon from '@mui/icons-material/Menu';
-
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import ButtonChangeTheme from '../buttons/ButtonChangeTheme';
 
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';

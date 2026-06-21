@@ -12,6 +12,30 @@ code {
     monospace;
 }
 
+.MuiTypography-h1 {
+  font-size: 2.5rem !important;
+}
+
+.MuiTypography-h2 {
+  font-size: 2rem !important;
+}
+
+.MuiTypography-h3 {
+  font-size: 1.75rem !important;
+}
+
+.MuiTypography-h4 {
+  font-size: 1.5rem !important;
+}
+
+.MuiTypography-h5 {
+  font-size: 1.25rem !important;
+}
+
+.MuiTypography-h6 {
+  font-size: 1rem !important;
+}
+
 body {
   --accent-light: #65b088;    
   --effect-light: #ddfbf4;
@@ -22,9 +46,13 @@ body {
   --bg-accordion: #63a1de;
   --bg-modal: white;
   --bg-button: white;
+  --bg-button-reversed: #2c3e9e;
   --bg-table: rgb(240,240,240);
   --bg-table-header: rgb(230,230,230);
   --bg-table-pagination: rgb(230,230,230);
+  --bg-select-border: #63a1de;
+  --bg-select-popover: white;
+  --bg-slider: #63a1de;
 
   --shadow-primary: rgba(0,0,0,0.6);
 
@@ -40,7 +68,9 @@ body {
   --text-accordion: white;
   --text-modal: black;
   --text-button: #2c3e9e;
+  --text-button-reversed: white;
   --text-table: black;
+  --text-slider: #63a1de;
 
   --tag-bg-default: gray;
   --tag-category-axes: brown;
@@ -76,9 +106,13 @@ body.dark {
   --bg-accordion: rgb(60,60,60);
   --bg-modal: rgb(60,60,60);
   --bg-button: rgb(90,90,90);
+  --bg-button-reversed: rgb(60,60,60);
   --bg-table: rgb(100,100,100);
   --bg-table-header: rgb(80,80,80);
   --bg-table-pagination: rgb(80,80,80);
+  --bg-select-border: #2c3e9e;
+  --bg-select-popover: rgb(140,140,140);
+  --bg-slider: #2c3e9e;
 
   --shadow-primary: rgba(0,0,0,0.6);
 
@@ -94,9 +128,11 @@ body.dark {
   --text-accordion: white;
   --text-modal: white;
   --text-button: white;
+  --text-button-reversed: white;
   --text-table: white;
+  --text-slider: white;
 
-  --tag-bg-default: gray;
+  --tag-bg-default: rgb(60,60,60);
   --tag-category-axes: rgb(60,60,60);
   --tag-service-fix: rgb(60,60,60);
   --tag-service-customization: rgb(60,60,60);

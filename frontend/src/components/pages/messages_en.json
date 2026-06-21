@@ -10,5 +10,9 @@
     "ui.pages.store.materials.cotton":"Cotton",
 
     "ui.pages.store.services.fix":"Fix Item",
-    "ui.pages.store.services.customization":"Customize item"
+    "ui.pages.store.services.customization":"Customize item",
+
+    "ui.pages.store.buttons.filter": "Aplly filters",
+
+    "ui.pages.store.search.item": "Search item"
 }

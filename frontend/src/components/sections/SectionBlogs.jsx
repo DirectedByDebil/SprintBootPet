@@ -1,5 +1,7 @@
 import './section.css';
 
+import { Typography } from '@mui/material';
+
 import { useTranslation } from 'react-i18next';
 
 function SectionBlogs() {
@@ -9,7 +11,11 @@ function SectionBlogs() {
   return (
     <>
       <section id='blogs' className='section-container'>
-        <header>{t('ui.blogs.header')}</header>
+        <header>
+          <Typography variant='h3'>
+            {t('ui.blogs.header')}
+          </Typography>
+        </header>
         <span>=== todo: blocks of posts/gifs/videos ===</span>
       </section>
     </>

@@ -24,7 +24,11 @@ function SectionAbout () {
   return (
     <>
       <section id='about' className='section-container'>
-        <header>{t('ui.about_us.header')}</header>
+        <header>
+          <Typography variant='h3'>
+            {t('ui.about_us.header')}
+          </Typography>
+        </header>
 
         <div className='grid p-top'>
 
@@ -57,10 +61,10 @@ function SectionAbout () {
                 textAlign: 'center',
               }}
             >
-              <Typography variant="h5" gutterBottom>
+              <Typography variant="h4" gutterBottom>
                 {t('ui.about_us.metamorphosis')}
               </Typography>
-              <Typography variant="body2">
+              <Typography variant="subtitle1">
                 {t('ui.about_us.description')}
               </Typography>
             </Box>
@@ -75,13 +79,13 @@ function SectionAbout () {
                 aria-controls={`-panel1-content`}
                 id={`panel1-header`}>
 
-                <Typography variant='h6'>
+                <Typography variant='h5'>
                   {t('ui.about_us.what_we_do.header')}
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
 
-                <Typography variant='subtitle1'>
+                <Typography variant='body1'>
                   {t('ui.about_us.what_we_do.description')}
                 </Typography>
 
@@ -94,13 +98,13 @@ function SectionAbout () {
                 aria-controls={`-panel2-content`}
                 id={`panel2-header`}>
 
-                <Typography variant='h6'>
+                <Typography variant='h5'>
                   {t('ui.about_us.style.header')}
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
 
-                <Typography variant='subtitle1'>
+                <Typography variant='body1'>
                   {t('ui.about_us.style.description')}
                 </Typography>
               </AccordionDetails>
@@ -112,13 +116,13 @@ function SectionAbout () {
                 aria-controls={`-panel3-content`}
                 id={`panel3-header`}>
 
-                <Typography variant='h6'>
+                <Typography variant='h5'>
                   {t('ui.about_us.details.header')}
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
 
-                <Typography variant='subtitle1'>
+                <Typography variant='body1'>
                   {t('ui.about_us.details.description')}
                 </Typography>
               </AccordionDetails>

@@ -1,14 +1,18 @@
 {
     "ui.pages.store.columns.image":"Картинка",
-    "ui.pages.store.columns.item":"Название",
+    "ui.pages.store.columns.item":"Изделие",
     "ui.pages.store.columns.categories":"Категории",
     "ui.pages.store.columns.materials":"Материалы",
-    "ui.pages.store.columns.price":"Стоимость",
+    "ui.pages.store.columns.price":"Стоимость изделия",
 
     "ui.pages.store.materials.wool":"Шёлк",
     "ui.pages.store.materials.wood":"Дерево",
     "ui.pages.store.materials.cotton":"Хлопок",
 
     "ui.pages.store.services.fix":"Ремонт изделия",
-    "ui.pages.store.services.customization":"Кастомизация изделия"
+    "ui.pages.store.services.customization":"Кастомизация изделия",
+
+    "ui.pages.store.buttons.filter": "Применить фильтры",
+
+    "ui.pages.store.search.item": "Поиск изделия"
 }

@@ -2,7 +2,7 @@ import './section.css';
 
 import { Tag } from '../common/Tag';
 
-import {Paper,
+import {Paper, Typography,
         Table, TableBody, TableCell,
         TableContainer, TableHead,
         TablePagination, TableRow
@@ -70,7 +70,9 @@ export const SectionStore = ({rows, columns}) => {
     <>
       <section className='section-container'>
         <header>
-          {t('ui.store.header')}
+          <Typography variant='h3'>
+            {t('ui.store.header')}
+          </Typography>
         </header>
 
         <Paper sx={{ 

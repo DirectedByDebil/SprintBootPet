@@ -1,6 +1,8 @@
 import './Layout.css';
 import './common.css';
 
+import { Typography } from '@mui/material';
+
 import { useTranslation } from 'react-i18next';
 
 import TelegramIcon from '@mui/icons-material/Telegram';
@@ -19,7 +21,9 @@ function Footer () {
 
           <section>
             <header>
-              {t('ui.headers.sections.contacts')}
+              <Typography variant='h3'>
+                {t('ui.headers.sections.contacts')}
+              </Typography>
             </header>
             <div className='col-started'>
               <div className='row-started'>
@@ -38,7 +42,9 @@ function Footer () {
 
           <section>
             <header>
-              {t('ui.headers.sections.legal_information')}
+              <Typography variant='h3'>
+                {t('ui.headers.sections.legal_information')}
+              </Typography>
             </header>
             <div className='col-started'>
               <a href='/doc_1'>Doc ref 1</a>

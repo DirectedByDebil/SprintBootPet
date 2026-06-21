@@ -83,7 +83,11 @@ const onCategoryInfoClick = (item) => {
   return (
     <>
       <section id='catalogue' className='section-container' reversed>
-        <header>{t('ui.catalogue.header')}</header>
+        <header>
+          <Typography variant='h3'>
+            {t('ui.catalogue.header')}
+          </Typography>
+        </header>
         
         <ModalCategoryInfo 
           isOpened={categoryInfoOpened} 
@@ -91,7 +95,7 @@ const onCategoryInfoClick = (item) => {
           ariaLabelledBy={"modal-category-info"}
           ariaDescribedBy={"modal-category-description"}
         >
-          <Typography id="modal-category-info" variant="h6" component="h2">
+          <Typography id="modal-category-info" variant="h4">
             {categoryInfo.title}
           </Typography>
           <Divider />
@@ -135,7 +139,7 @@ const onCategoryInfoClick = (item) => {
           href='/store'
           startIcon={<ShoppingCartCheckout/>}>
             
-          <Typography variant='caption' size='small'>
+          <Typography variant='button' size='small'>
             {t('ui.catalogue.buttons.to_store')}
           </Typography>
         </Button>

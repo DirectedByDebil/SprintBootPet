@@ -36,6 +36,11 @@ a:hover {
     background-color: var(--bg-button) !important;
 }
 
+.button[reversed] {
+    color: var(--text-button-reversed) !important;
+    background-color: var(--bg-button-reversed) !important;
+}
+
 .tag {
     display: inline-flex;
     padding: 4px 12px;

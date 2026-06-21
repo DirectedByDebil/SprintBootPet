@@ -165,9 +165,45 @@ function StorePage () {
     ),
   ];
 
+  const categories = [
+    {
+      id:'axes',
+      type:'category',
+      label:t('sections:ui.catalogue.titles.axes')
+    },
+    {
+      id:'fix',
+      type:'service',
+      label:t('ui.pages.store.services.fix')
+    },
+    {
+      id:'customization',
+      type:'service',
+      label:t('ui.pages.store.services.customization')
+    },
+  ];
+
+  const materials = [
+    {
+      id:'wood',
+      type:'materials',
+      label:t('ui.pages.store.materials.wood')
+    },
+    {
+      id:'wool',
+      type:'materials',
+      label:t('ui.pages.store.materials.wool')
+    },
+    {
+      id:'cotton',
+      type:'materials',
+      label:t('ui.pages.store.materials.cotton')
+    },
+  ];
+
   return (
     <div>
-      <SectionStoreFilters />
+      <SectionStoreFilters categories={categories} materials={materials} />
       <SectionStore rows={rows} columns={columns}/>
     </div>
   );

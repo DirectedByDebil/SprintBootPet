@@ -11,16 +11,21 @@ import sectionMessages_ru from '../components/sections/messages_ru.json';
 import pagesMessages_en from '../components/pages/messages_en.json';
 import pagesMessages_ru from '../components/pages/messages_ru.json';
 
+import elementsMessages_en from '../components/inputs/messages_en.json';
+import elementsMessages_ru from '../components/inputs/messages_ru.json';
+
 const resources = {
   en: {
     common: commonMessages_en,
     sections: sectionMessages_en,
-    pages: pagesMessages_en
+    pages: pagesMessages_en,
+    elements: elementsMessages_en
   },
   ru: {
     common: commonMessages_ru,
     sections: sectionMessages_ru,
-    pages: pagesMessages_ru
+    pages: pagesMessages_ru,
+    elements: elementsMessages_ru
   }
 };
 
