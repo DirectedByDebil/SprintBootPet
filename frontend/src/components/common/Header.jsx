@@ -5,7 +5,7 @@ import ButtonChangeTheme from '../inputs/ButtonChangeTheme';
 
 import { AppBar, Container, Toolbar,
         Menu, MenuItem, Box,
-        Button, IconButton
+        Button, IconButton, Typography
       } from '@mui/material';
 
 
@@ -131,7 +131,11 @@ function Header () {
                 {
                   navs.map((item) => (
                     <Button key={item.id}>
-                        <a href={item.id}>{item.label}</a>
+                        <a href={item.id}>
+                          <Typography variant='h4'>
+                            {item.label}
+                          </Typography>
+                        </a>
                     </Button>
                   ))
                 }

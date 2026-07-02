@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './components/pages/HomePage';
 import StorePage from './components/pages/StorePage';
+import { AdminControlPage } from './components/pages/AdminControlPage';
 import Layout from './components/common/Layout';
 
 //todo maybe add auth provider
@@ -12,6 +13,7 @@ function App() {
             <Route path="/" element={<Layout />} >
               <Route index element={<HomePage />} />
               <Route path="store" element={<StorePage />} />
+              <Route path="admin" element={<AdminControlPage />} />
             </Route>
           </Routes>
       </BrowserRouter>      

@@ -1,4 +1,19 @@
 {
     "ui.labels.range.from": "С",
-    "ui.labels.range.to": "По"
+    "ui.labels.range.to": "По",
+
+    "ui.labels.stylePicker": "Выберите стиль элемента",
+
+    "ui.labels.stylePresets.sky": "Лазурь",
+    "ui.labels.stylePresets.cyan": "Бирюза",
+    "ui.labels.stylePresets.darkSky": "Полночь",
+
+    "ui.labels.stylePresets.coral": "Закат",
+    "ui.labels.stylePresets.crimson": "Рубин",
+    "ui.labels.stylePresets.wine": "Бордо",
+
+    "ui.labels.stylePresets.wheat": "Пшено",
+    "ui.labels.stylePresets.gold": "Мёд",
+    "ui.labels.stylePresets.steel": "Пепел"
+
 }

@@ -38,5 +38,9 @@
     "ui.store.header": "Items",
     "ui.store.filters": "Items Filters",
 
+    "ui.admin.management.items": "Manage Items",
+    "ui.admin.management.categories": "Manage Categories",
+    "ui.admin.management.materials": "Manage Materials",
+
     "": ""
 }

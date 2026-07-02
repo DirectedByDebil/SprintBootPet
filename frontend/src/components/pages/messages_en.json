@@ -5,6 +5,22 @@
     "ui.pages.store.columns.materials":"Materials",
     "ui.pages.store.columns.price":"Price",
 
+    "ui.pages.store.columns.id":"Id",
+    "ui.pages.store.columns.category":"Category",
+    "ui.pages.store.columns.material":"Material",
+    "ui.pages.store.columns.actions":"Actions",
+
+    "ui.labels.forms.category.edit":"Edit Category",
+    "ui.labels.forms.category.delete":"Delete Category?",
+    "ui.labels.forms.material.edit":"Edit Material",
+    "ui.labels.forms.material.delete":"Delete Material?",
+    "ui.labels.forms.item.edit":"Edit Item",
+    "ui.labels.forms.item.delete":"Delete Item?",
+
+    "ui.labels.buttons.cancel":"Cancel",
+    "ui.labels.buttons.edit":"Edit",
+    "ui.labels.buttons.delete":"Delete",
+
     "ui.pages.store.materials.wool":"Wool",
     "ui.pages.store.materials.wood":"Wood",
     "ui.pages.store.materials.cotton":"Cotton",

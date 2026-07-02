@@ -1,11 +1,20 @@
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--bg-modal);
-    color: var(--text-modal);
-    
-    border-radius: 4px;
-    padding: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-modal);
+  color: var(--text-modal);
+  
+  border-radius: 4px;
+  padding: 4px;
+}
+
+
+.MuiDialog-root .MuiDialog-paper {
+  background-color: var(--bg-form);
+  color: var(--text-form);
+  
+  border-radius: 4px;
+  padding: 4px;
 }

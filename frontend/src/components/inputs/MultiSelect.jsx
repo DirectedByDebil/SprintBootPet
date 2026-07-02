@@ -8,7 +8,11 @@ import { Select, MenuItem, FormControl,
 
 import { useState, useEffect } from "react";
 
-export const MultiSelect = ({label='', items=[]}) => {
+export const MultiSelect = ({
+  label='',
+  disabled=false,
+  items=[],
+  defaultValue=[]}) => {
 
   const ITEM_HEIGHT = 48;
   const ITEM_PADDING_TOP = 8;
@@ -36,7 +40,7 @@ export const MultiSelect = ({label='', items=[]}) => {
     },
   };
 
-  const [selectedItems, setSelectedItems] = useState([]);
+  const [selectedItems, setSelectedItems] = useState(defaultValue);
   const [itemsMap, setItemsMap] = useState({});
 
   useEffect(() => {
@@ -76,6 +80,7 @@ export const MultiSelect = ({label='', items=[]}) => {
           labelId="multiple-select-label"
           id="multiple-select"
           multiple
+          disabled={disabled}
           value={selectedItems}
           onChange={handleChange}
           input={<OutlinedInput id="multiple-select-input" label={label} />}

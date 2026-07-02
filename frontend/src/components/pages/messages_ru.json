@@ -5,6 +5,22 @@
     "ui.pages.store.columns.materials":"Материалы",
     "ui.pages.store.columns.price":"Стоимость изделия",
 
+    "ui.pages.store.columns.id":"Идентификатор",
+    "ui.pages.store.columns.category":"Категория",
+    "ui.pages.store.columns.material":"Материал",
+    "ui.pages.store.columns.actions":"Действия",
+
+    "ui.labels.forms.category.edit":"Редактировать категорию",
+    "ui.labels.forms.category.delete":"Удалить категорию?",
+    "ui.labels.forms.material.edit":"Редактировать материал",
+    "ui.labels.forms.material.delete":"Удалить материал?",
+    "ui.labels.forms.item.edit":"Редактировать изделие",
+    "ui.labels.forms.item.delete":"Удалить изделие?",
+
+    "ui.labels.buttons.cancel":"Отмена",
+    "ui.labels.buttons.edit":"Редактировать",
+    "ui.labels.buttons.delete":"Удалить",
+
     "ui.pages.store.materials.wool":"Шёлк",
     "ui.pages.store.materials.wood":"Дерево",
     "ui.pages.store.materials.cotton":"Хлопок",

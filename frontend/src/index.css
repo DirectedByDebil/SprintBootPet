@@ -45,6 +45,7 @@ body {
   --bg-header: rgba(255,255,255,0.7);
   --bg-accordion: #63a1de;
   --bg-modal: white;
+  --bg-form: white;
   --bg-button: white;
   --bg-button-reversed: #2c3e9e;
   --bg-table: rgb(240,240,240);
@@ -53,8 +54,10 @@ body {
   --bg-select-border: #63a1de;
   --bg-select-popover: white;
   --bg-slider: #63a1de;
+  --bg-divider: rgb(230,230,230);
 
   --shadow-primary: rgba(0,0,0,0.6);
+  --shadow-accent: #63a1de;
 
   --text-primary: #63a1de;
   --text-primary-reversed: white;
@@ -67,6 +70,7 @@ body {
 
   --text-accordion: white;
   --text-modal: black;
+  --text-form: black;
   --text-button: #2c3e9e;
   --text-button-reversed: white;
   --text-table: black;
@@ -89,6 +93,42 @@ body {
   --tag-materials-wool-text: rgb(40,40,40);
   --tag-materials-cotton-text: white;
 
+  /* sky */
+  --tag-style-sky-bg: cornflowerblue;
+  --tag-style-sky-text: antiquewhite;
+
+  /* darkSky */
+  --tag-style-darkSky-bg: darkblue;
+  --tag-style-darkSky-text: antiquewhite;
+
+  /* coral */
+  --tag-style-coral-bg: pink;
+  --tag-style-coral-text: darkblue;
+
+  /* crimson */
+  --tag-style-crimson-bg: crimson;
+  --tag-style-crimson-text: white;
+
+  /* wine */
+  --tag-style-wine-bg: #942043;
+  --tag-style-wine-text: antiquewhite;
+
+  /* cyan */
+  --tag-style-cyan-bg: darkcyan;
+  --tag-style-cyan-text: antiquewhite;
+
+  /* steel */
+  --tag-style-steel-bg: slategray;
+  --tag-style-steel-text: white;
+
+  /* wheat */
+  --tag-style-wheat-bg: wheat;
+  --tag-style-wheat-text: black;
+
+  /* gold */
+  --tag-style-gold-bg: gold;
+  --tag-style-gold-text: black;
+
   --a-color: #07eaa2;
 
   transition: 
@@ -105,6 +145,7 @@ body.dark {
   --bg-header: rgba(60,60,60,0.7);
   --bg-accordion: rgb(60,60,60);
   --bg-modal: rgb(60,60,60);
+  --bg-form: rgb(90,90,90);
   --bg-button: rgb(90,90,90);
   --bg-button-reversed: rgb(60,60,60);
   --bg-table: rgb(100,100,100);
@@ -113,8 +154,10 @@ body.dark {
   --bg-select-border: #2c3e9e;
   --bg-select-popover: rgb(140,140,140);
   --bg-slider: #2c3e9e;
+  --bg-divider: #2c3e9e;
 
   --shadow-primary: rgba(0,0,0,0.6);
+  --shadow-accent: #2c3e9e;
 
   --text-primary: white;
   --text-primary-reversed: white;
@@ -127,6 +170,7 @@ body.dark {
 
   --text-accordion: white;
   --text-modal: white;
+  --text-form: white;
   --text-button: white;
   --text-button-reversed: white;
   --text-table: white;

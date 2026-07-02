@@ -1,7 +1,9 @@
 import './common.css';
-import { Box } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 
-export const Tag = ({item}) => {
+import { TaskAlt } from '@mui/icons-material';
+
+export const Tag = ({item, clickable=false, selected=false}) => {
 
   var id = '';
   var label = '---';
@@ -19,11 +21,37 @@ export const Tag = ({item}) => {
     label = item;
   }
 
+  if (selected) {
+    data['data-selected'] = selected;
+  }
+
+  const className = `tag ${clickable? 'clickable':''}`;
+
   return (
     <>
-      <Box className='tag' key={id} {...data}>
-        {label}
-      </Box>
+      <Stack direction={'row'} spacing={2}>
+
+        <Box className={className} key={id} {...data}
+          sx={{
+            display:'inline-flex',
+            justifyContent: 'center',
+            alignItems:'center',
+            gap: '3px'
+          }}>
+          
+          <TaskAlt sx={{
+            maxWidth: selected ? '24px' : '0px',
+            opacity: selected ? 1 : 0,
+            overflow: 'hidden',
+            transition: 'max-width 0.3s ease, opacity 0.2s ease',
+            flexShrink: 0,
+          }} />
+
+            <Typography variant='button'>
+              {label}
+            </Typography>
+        </Box>
+      </Stack>
     </>
   );
 }

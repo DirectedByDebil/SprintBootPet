@@ -53,6 +53,19 @@ a:hover {
     text-align: center;
 }
 
+.tag.clickable {
+    transition: scale 200ms ease-in-out;
+}
+
+.tag.clickable:hover {
+    scale: 1.1;
+}
+
+.tag[data-selected] {
+    scale: 1.2;
+}
+
+/*todo delete this css*/
 .tag[data-category-axes] {
     background-color: var(--tag-category-axes);
     color: var(--tag-category-axes-text);
@@ -81,4 +94,50 @@ a:hover {
 .tag[data-materials-cotton] {
     background-color: var(--tag-materials-cotton);
     color: var(--tag-materials-cotton-text);
+}
+
+
+.tag[data-style-sky] {
+  background-color: var(--tag-style-sky-bg);
+  color: var(--tag-style-sky-text);
+}
+
+.tag[data-style-darkSky] {
+  background-color: var(--tag-style-darkSky-bg);
+  color: var(--tag-style-darkSky-text);
+}
+
+.tag[data-style-coral] {
+  background-color: var(--tag-style-coral-bg);
+  color: var(--tag-style-coral-text);
+}
+
+.tag[data-style-crimson] {
+  background-color: var(--tag-style-crimson-bg);
+  color: var(--tag-style-crimson-text);
+}
+
+.tag[data-style-wine] {
+  background-color: var(--tag-style-wine-bg);
+  color: var(--tag-style-wine-text);
+}
+
+.tag[data-style-cyan] {
+  background-color: var(--tag-style-cyan-bg);
+  color: var(--tag-style-cyan-text);
+}
+
+.tag[data-style-steel] {
+  background-color: var(--tag-style-steel-bg);
+  color: var(--tag-style-steel-text);
+}
+
+.tag[data-style-wheat] {
+  background-color: var(--tag-style-wheat-bg);
+  color: var(--tag-style-wheat-text);
+}
+
+.tag[data-style-gold] {
+  background-color: var(--tag-style-gold-bg);
+  color: var(--tag-style-gold-text);
 }

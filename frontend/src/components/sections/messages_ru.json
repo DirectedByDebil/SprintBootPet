@@ -41,5 +41,9 @@
     "ui.store.header": "Изделия",
     "ui.store.filters": "Фильтры изделий",
 
+    "ui.admin.management.items": "Управление изделиями",
+    "ui.admin.management.categories": "Управление категориями",
+    "ui.admin.management.materials": "Управление материалами",
+
     "": ""
 }

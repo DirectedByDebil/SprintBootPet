@@ -19,7 +19,7 @@ function Logo () {
       }}>
         <header style={{color:'black'}}>
           <Typography
-            variant='h6'
+            variant='h1'
             component="a"
             href='/'
             sx={{

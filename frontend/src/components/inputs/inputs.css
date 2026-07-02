@@ -1,0 +1,17 @@
+
+.style-picker {
+  padding: 4px !important;
+  padding-bottom: 12px !important;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px var(--shadow-accent);
+}
+
+.style-picker__header {
+  font-style: italic;
+  margin: 12px !important;
+}
+
+.style-picker__divider {
+  margin: 12px !important;
+  background-color: var(--bg-divider);
+}

@@ -1,4 +1,18 @@
 {
     "ui.labels.range.from": "from",
-    "ui.labels.range.to": "to"
+    "ui.labels.range.to": "to",
+
+    "ui.labels.stylePicker": "Pick element style",
+
+    "ui.labels.stylePresets.sky": "Sky",
+    "ui.labels.stylePresets.cyan": "Cyan",
+    "ui.labels.stylePresets.darkSky": "Dark Sky",
+
+    "ui.labels.stylePresets.coral": "Coral",
+    "ui.labels.stylePresets.crimson": "Crimson",
+    "ui.labels.stylePresets.wine": "Wine",
+
+    "ui.labels.stylePresets.wheat": "Wheat",
+    "ui.labels.stylePresets.gold": "Gold",
+    "ui.labels.stylePresets.steel": "Steel"
 }

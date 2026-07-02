@@ -1,11 +1,24 @@
 
 import { TextField } from "@mui/material";
 
-export const TextInput = ({label=''}) => {
+export const TextInput = ({
+  label='',
+  id='search-input',
+  name='',
+  value='',
+  disabled=false
+}) => {
 
   return(
     <>
-      <TextField fullWidth id="search-input" label={label} type="search"
+      <TextField fullWidth
+        id={id}
+        name={name}
+        label={label}
+        type="search"
+        value={value}
+        disabled={disabled}
+
         sx={{
           '& .MuiOutlinedInput-root': {
             color:'var(--text-primary)',
